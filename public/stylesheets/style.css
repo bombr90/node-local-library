@@ -1,5 +1,67 @@
 .sidebar-nav {
-  margin-top: 20px;
-  padding: 0;
+  display:flex;
+  color: inherit;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 1rem;
   list-style: none;
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: gray;
+  height: 100vh;
+  padding: 1rem;
+  margin: 0;
+  background-color: lightgray;
+}
+
+
+a{
+  color: inherit;
+}
+
+a:hover{
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar-nav li:hover{
+  font-weight: 700;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.template {
+  display:flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 1rem;
+  background-color: whitesmoke;
+  
+}
+
+.btn-primary {
+  font-weight: 700;
+  color: white;
+  background-color: lightgray; 
+  border-color: gray;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  color:whitesmoke;
+  background-color: gray;
+  border-color: darkgray;
+  box-shadow: none;
+}
+
+textarea {
+  resize: none;
 }
