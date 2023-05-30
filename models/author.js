@@ -75,5 +75,13 @@ AuthorSchema.virtual("lifespan").get(function () {
   return str;
 })
 
+AuthorSchema.virtual("birth_calendar").get(function () {
+  return DateTime.fromJSDate(this.date_of_birth).toFormat("yyyy-MM-dd");
+});
+
+AuthorSchema.virtual("death_calendar").get(function () {
+  return DateTime.fromJSDate(this.date_of_death).toFormat("yyyy-MM-dd");
+});
+
 // Export model
 module.exports = mongoose.model("Author", AuthorSchema);

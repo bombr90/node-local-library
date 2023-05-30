@@ -65,3 +65,9 @@ a:hover{
 textarea {
   resize: none;
 }
+
+hr {
+  width: 90%;
+  border-width: 2px;
+  border-radius: .25rem;
+}
